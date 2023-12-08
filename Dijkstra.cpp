@@ -7,7 +7,6 @@ using namespace std;
 #define ll long long
 #define pll pair<ll,ll>
 const ll INF = LLONG_MAX;
-int v, e;
 
 pair <vector <ll>, vector <ll>> dijkstra (ll origin, vector <pll> *grafo){
     vector <ll> dist, prec;
