@@ -19,7 +19,7 @@ vector <ll> dijkstra (ll origin, vector <pll> *grafo, int n){
         aux = pq.top();
         pq.pop();
         if(aux.first > dist[aux.second]) continue;
-        for(pll H: grafo[aux.first]){
+        for(pll H: grafo[aux.second]){
             if(H.second + aux.first < dist[H.first]){
                 dist[H.first] = H.second + aux.first;
                 pq.push({dist[H.first], H.first});
